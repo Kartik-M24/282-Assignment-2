@@ -11,7 +11,7 @@ Once the two sums have been calculated and displayed, they are inputted into the
 gcd between the two sums. Each time it returns to another gcd method, it displays the values for a, b, q (quotient) and r (remainder) until the remainder
 is 0, and thus the gcd is determined (the last non-zero remainder - b). This is finally outputted. 
 
-**Example:**
+**Example:**\
 Inputs are A: 44 B: 45\
 Sum of first 45 Fibonacci numbers: 1836311902\
 Sum of first 44 Fibonacci numbers: 1134903169\
