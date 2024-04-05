@@ -12,33 +12,34 @@ gcd between the two sums. Each time it returns to another gcd method, it display
 is 0, and thus the gcd is determined (the last non-zero remainder - b). This is finally outputted. 
 
 **Example:**
-Inputs are A: 44 B: 45
-Sum of first 45 Fibonacci numbers: 1836311902
-Sum of first 44 Fibonacci numbers: 1134903169
-Iteration 1 : 1836311902 = 1134903169 x 1 + 701408733
-Iteration 2 : 1134903169 = 701408733 x 1 + 433494436
-Iteration 3 : 701408733 = 433494436 x 1 + 267914297
-Iteration 4 : 433494436 = 267914297 x 1 + 165580139
-Iteration 5 : 267914297 = 165580139 x 1 + 102334158
-Iteration 6 : 165580139 = 102334158 x 1 + 63245981
-Iteration 7 : 102334158 = 63245981 x 1 + 39088177
-Iteration 8 : 63245981 = 39088177 x 1 + 24157804
-Iteration 9 : 39088177 = 24157804 x 1 + 14930373
-Iteration 10 : 24157804 = 14930373 x 1 + 9227431
-Iteration 11 : 14930373 = 9227431 x 1 + 5702942
-Iteration 12 : 9227431 = 5702942 x 1 + 3524489
-Iteration 13 : 5702942 = 3524489 x 1 + 2178453
-Iteration 14 : 3524489 = 2178453 x 1 + 1346036
-Iteration 15 : 2178453 = 1346036 x 1 + 832417
-Iteration 16 : 1346036 = 832417 x 1 + 513619
-Iteration 17 : 832417 = 513619 x 1 + 318798
-Iteration 18 : 513619 = 318798 x 1 + 194821
-Iteration 19 : 318798 = 194821 x 1 + 123977
-Iteration 20 : 194821 = 123977 x 1 + 70844
-Iteration 21 : 123977 = 70844 x 1 + 53133
-Iteration 22 : 70844 = 53133 x 1 + 17711
-Iteration 23 : 53133 = 17711 x 3 + 0
-GCD of the two sums is: 17711
+Inputs are A: 44 B: 45\
+Sum of first 45 Fibonacci numbers: 1836311902\
+Sum of first 44 Fibonacci numbers: 1134903169\
+Iteration n:  a = b x q + r\
+Iteration 1 : 1836311902 = 1134903169 x 1 + 701408733\
+Iteration 2 : 1134903169 = 701408733 x 1 + 433494436\
+Iteration 3 : 701408733 = 433494436 x 1 + 267914297\
+Iteration 4 : 433494436 = 267914297 x 1 + 165580139\
+Iteration 5 : 267914297 = 165580139 x 1 + 102334158\
+Iteration 6 : 165580139 = 102334158 x 1 + 63245981\
+Iteration 7 : 102334158 = 63245981 x 1 + 39088177\
+Iteration 8 : 63245981 = 39088177 x 1 + 24157804\
+Iteration 9 : 39088177 = 24157804 x 1 + 14930373\
+Iteration 10 : 24157804 = 14930373 x 1 + 9227431\
+Iteration 11 : 14930373 = 9227431 x 1 + 5702942\
+Iteration 12 : 9227431 = 5702942 x 1 + 3524489\
+Iteration 13 : 5702942 = 3524489 x 1 + 2178453\
+Iteration 14 : 3524489 = 2178453 x 1 + 1346036\
+Iteration 15 : 2178453 = 1346036 x 1 + 832417\
+Iteration 16 : 1346036 = 832417 x 1 + 513619\
+Iteration 17 : 832417 = 513619 x 1 + 318798\
+Iteration 18 : 513619 = 318798 x 1 + 194821\
+Iteration 19 : 318798 = 194821 x 1 + 123977\
+Iteration 20 : 194821 = 123977 x 1 + 70844\
+Iteration 21 : 123977 = 70844 x 1 + 53133\
+Iteration 22 : 70844 = 53133 x 1 + 17711\
+Iteration 23 : 53133 = 17711 x 3 + 0\
+GCD of the two sums is: 17711\
 ***Note the above output is taken directly from the terminal on which the code was run.***
 
 **To compile and run the program:**
