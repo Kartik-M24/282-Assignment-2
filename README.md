@@ -2,14 +2,7 @@ This program takes in two positive integers, A and B. It then sums the first A a
 The program is written in Java.
 
 **How It Works:**
-The program starts by summing the Fibonacci the first A and B Fibonacci numbers; this is done using memoization. Memoization is an optimisation 
-technique used to increase the efficiency of the code. This program calculates and stores Fibonacci sum values and stores them in the 
-corresponding position. This means that if another sum is to be calculated, the program can refer to the pre-calculated values in the array instead
-of having to recursively calculate it again, i.e. if A = 12 and B = 15, the values for the sum from 1-12 have already been calculated and stored in
-the array when A was run through the fibonacciSum method so when B is run the second time it only has to calculate values for 13,14 and 15.
-Once the two sums have been calculated and displayed, they are inputted into the gcd method, which recursively uses the Euclid Division Lemma to work out the 
-gcd between the two sums. Each time it returns to another gcd method, it displays the values for a, b, q (quotient) and r (remainder) until the remainder
-is 0, and thus the gcd is determined (the last non-zero remainder - b). This is finally outputted. 
+The program starts by summing the Fibonacci the first A and B Fibonacci numbers; this is done using memoization. Memoization is an optimisation technique used to increase the efficiency of the code. This program calculates and stores Fibonacci sum values and stores them in the  corresponding position. This means that if another sum is to be calculated, the program can refer to the pre-calculated values in the array instead of having to recursively calculate it again, i.e. if A = 12 and B = 15, the values for the sum from 1-12 have already been calculated and stored in the array when A was run through the fibonacciSum method so when B is run the second time it only has to calculate values for 13,14 and 15. Once the two sums have been calculated and displayed, they are inputted into the gcd method, which recursively uses the Euclid Division Lemma to work out the  gcd between the two sums. Each time it returns to another gcd method, it displays the values for a, b, q (quotient) and r (remainder) until the remainder is 0, and thus the gcd is determined (the last non-zero remainder - b). This is finally outputted. 
 
 **Example:**\
 Inputs are A: 44 B: 45\
