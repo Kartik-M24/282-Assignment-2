@@ -1,8 +1,8 @@
 public class Main {
-    // Static array stores all previously computed values fibonacci sums to increase efficiency
+    // Static array stores all previously computed values Fibonacci sums to increase efficiency
     static  int[] fibonnaciArray = new int [1000]; 
 
-    // Recursive method to find the sum of the first n Fibonacci numbers
+    // Recursive method to find the sum of the first n Fibonacci numbers using memoization
     public static int fibonnaciSum(int val) {
         if (val == 1) {
             return 0;
@@ -20,7 +20,7 @@ public class Main {
         }
     }
 
-    // Recurisve Method to find the gcd of the two sums using the Euclidean Algorithm
+    // Recursive Method to find the gcd of the two sums using the Euclidean Algorithm
     public static int gcd(int a, int b, int i) {
         if (b == 0)
             return a;
@@ -46,7 +46,6 @@ public class Main {
             largerVal = b;
             smallerVal = a;
         }
-        
 
         // Finding Sum of the first n Fibonacci numbers
         int sumSmaller = fibonnaciSum(smallerVal);
@@ -54,8 +53,9 @@ public class Main {
 
         // Printing out the results
         System.out.println("Inputs are A: " + a + " B: " + b);
-        System.out.println("Sum of first " + largerVal + " fibonnaci numbers: " + sumLarger);
-        System.out.println("Sum of first " + smallerVal + " fibonnaci numbers: " + sumSmaller);
+        System.out.println("Sum of first " + largerVal + " Fibonnaci numbers: " + sumLarger);
+        System.out.println("Sum of first " + smallerVal + " Fibonnaci numbers: " + sumSmaller);
+        System.out.println("Iteration n:  a = b x q + r");
 
         // Finding the GCD of the two sums
         int output = gcd(sumLarger, sumSmaller, 1);
