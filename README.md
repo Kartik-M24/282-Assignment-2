@@ -42,6 +42,5 @@ GCD of the two sums is: 17711\
 3) Run the program
 4) You will see a similar output to the above.
 
-*Note there are limits to this code; the maximum n value for the sum of the first n Fibonacci values is 45. Above this value, the sum goes beyond the range int
-type can be represented in Java (-2147483648 to 2147483647), so the value gets rolled over and becomes negative.* 
+*Note there are limits to this code; the maximum n value for the sum of the first n Fibonacci values is 45. Above this value, the sum goes beyond the range int type can be represented in Java (-2147483648 to 2147483647), so the value gets rolled over and becomes negative.* 
 Obviously, A and B must be whole numbers > 0 (as A and B are positive integers).
