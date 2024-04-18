@@ -39,6 +39,7 @@ public class sumOfnFibonnaci {
                 if (i == smallerVal-2){
                     sums[1] = sum;
                 }
+                // Calculates next Fibonacci value and adds this to the sum
                 c = a + b;
                 sum += c;
                 a = b;
