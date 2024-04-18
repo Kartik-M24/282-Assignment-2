@@ -2,8 +2,8 @@ This program takes in two positive integers, A and B. It then sums the first A a
 The program is written in Java.
 All files written by Kartik Malik.
 
-**How It Works:**
-The program starts by summing the Fibonacci the first A and B Fibonacci numbers; this is done via a for loop. The for loop has the first two values of 0 and 1 set and then runs through the loop n-2 times to determine the next Fibonacci value and then adds this to the sum. This code is made more efficient by calculating the smaller sum and saving this to a 1x2 array as it calculates the larger sum, which is then saved in the same array (in the second position). Once the two sums have been calculated and displayed, they are inputted into the gcd method, which recursively uses the Euclid Division Lemma to work out the  gcd between the two sums. Each time it returns to another gcd method, it displays the values for a, b, q (quotient) and r (remainder) until the remainder is 0, and thus the gcd is determined (the last non-zero remainder - b). This is finally outputted. 
+**How It Works:**\
+The program starts by taking the inputs, determining which value is larger, and inputting this into the sumOfnFibonacci() method. This then sums the first A and B Fibonacci numbers, done via a for loop. The for loop has the first two values of 0 and 1 set and then runs through the loop n-2 times to determine the next Fibonacci value and then adds this to the sum. This code is made more efficient by calculating the smaller sum and saving this to a 1x2 array as it calculates the larger sum, which is then saved in the same array (in the second position). Once the two sums have been calculated and displayed, they are inputted into the gcd method, which recursively uses the Euclid Division Lemma to work out the  gcd between the two sums. Each time it returns to another gcd method, it displays the values for a, b, q (quotient) and r (remainder) until the remainder is 0, and thus the gcd is determined (the last non-zero remainder - b). This is finally outputted. 
 
 **Example:**\
 Inputs are A: 44 B: 45\
