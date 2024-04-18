@@ -33,7 +33,7 @@ Iteration 20 : 194821 = 123977 x 1 + 70844\
 Iteration 21 : 123977 = 70844 x 1 + 53133\
 Iteration 22 : 70844 = 53133 x 1 + 17711\
 Iteration 23 : 53133 = 17711 x 3 + 0\
-GCD of the two sums is: 17711\
+GCD of the two sums is: 17711
 
 Inputs are A: 33 B: 40\
 Sum of first 40 Fibonacci numbers: 165580140\
