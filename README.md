@@ -38,7 +38,7 @@ GCD of the two sums is: 17711\
 
 **To compile and run the program:**
 1) Clone the repository
-2) Input the values you want to test for (lines 35 & 36)
+2) Input the values you want to test for (lines 15 & 16)
 3) Run the program
 4) You will see a similar output to the above.
 
