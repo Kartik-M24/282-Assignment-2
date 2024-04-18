@@ -40,8 +40,8 @@ public class Main {
 
             // Printing out the results
             System.out.println("Inputs are A: " + a + " B: " + b);
-            System.out.println("Sum of first " + largerVal + " fibonnaci numbers: " + sumLarger);
-            System.out.println("Sum of first " + smallerVal + " fibonnaci numbers: " + sumSmaller);
+            System.out.println("Sum of first " + largerVal + " Fibonacci numbers: " + sumLarger);
+            System.out.println("Sum of first " + smallerVal + " Fibonacci numbers: " + sumSmaller);
             System.out.println("Iteration n:  a = b x q + r");
 
             // Finding the GCD of the two sums
