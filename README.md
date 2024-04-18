@@ -5,7 +5,7 @@ All files written by Kartik Malik.
 **How It Works:**\
 The program starts by taking the inputs, checking if it's in the valid range, determining which value is larger, and inputting this into the sumOfnFibonacci() method. This then sums the first A and B Fibonacci numbers via a for loop. The for loop has the first two values of 0 and 1 set and then runs through the loop n-2 times to determine the next Fibonacci value and then adds this to the sum. This code is made more efficient by calculating the smaller sum and saving this to a 1x2 array as it calculates the larger sum, which is then saved in the same array (in the second position). Once the two sums have been calculated and displayed, they are inputted into the gcd method, which recursively uses the Euclid Division Lemma to work out the  gcd between the two sums. Each time it returns to another gcd method, it displays the values for a, b, q (quotient) and r (remainder) until the remainder is 0, and thus the gcd is determined (the last non-zero remainder - b). This is finally outputted. 
 
-**Example:**\
+**Examples:**\
 Inputs are A: 44 B: 45\
 Sum of first 45 Fibonacci numbers: 1836311902\
 Sum of first 44 Fibonacci numbers: 1134903169\
@@ -34,7 +34,19 @@ Iteration 21 : 123977 = 70844 x 1 + 53133\
 Iteration 22 : 70844 = 53133 x 1 + 17711\
 Iteration 23 : 53133 = 17711 x 3 + 0\
 GCD of the two sums is: 17711\
-***Note the above output is taken directly from the terminal on which the code was run.***
+
+Inputs are A: 33 B: 40\
+Sum of first 40 Fibonacci numbers: 165580140\
+Sum of first 33 Fibonacci numbers: 5702886\
+Iteration n:  a = b x q + r\
+Iteration 1 : 165580140 = 5702886 x 29 + 196446\
+Iteration 2 : 5702886 = 196446 x 29 + 5952\
+Iteration 3 : 196446 = 5952 x 33 + 30\
+Iteration 4 : 5952 = 30 x 198 + 12\
+Iteration 5 : 30 = 12 x 2 + 6\
+Iteration 6 : 12 = 6 x 2 + 0\
+GCD of the two sums is: 6\
+***Note the above outputs are taken directly from the terminal on which the code was run.***
 
 **To compile and run the program:**
 1) Clone the repository
