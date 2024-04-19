@@ -71,5 +71,5 @@ As shown in the second example, only int inputs within the range of 1-45 are acc
 3) Run the program
 4) You will see a similar output to the above.
 
-*Note there are limits to this code; the maximum n value for the sum of the first n Fibonacci values is 92. Above this value, the sum goes beyond the range int type can be represented in Java (-9,223,372,036,854,775,808 to -9,223,372,036,854,775,808), so the value gets rolled over and becomes negative.* 
+*Note there are limits to this code; the maximum n value for the sum of the first n Fibonacci values is 68. Above this value, the sum comes out as inaccurate due to rounding errors in how java stores vaues of long type. Long type can be represented in Java (-9,223,372,036,854,775,808 to -9,223,372,036,854,775,808), so the value gets rounded and the sum becomes inaccurate beyond n = 68.* 
 Obviously, A and B must be whole numbers > 0 (as A and B are positive integers). If other types are inputted for A and B, the code will not accept these inputs and will repeatedly ask until a valid input is given (and in the valid range).
