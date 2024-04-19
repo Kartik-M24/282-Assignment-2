@@ -18,14 +18,14 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int input = 0;
         boolean valid = false;
-        System.out.println("Please enter an integer between 1 and 92 (inclusive): ");
+        System.out.println("Please enter an integer between 1 and 68 (inclusive): ");
 
         // Loop to check for valid input (integer between 1 and 45 inclusive)
         while (valid == false) {
             try {
                 input = scanner.nextInt(); // Get the input
                 if (input > 92 || input < 0) {
-                    System.out.println("Please make sure inputs are between 1 and 92 (inclusive)");
+                    System.out.println("Please make sure inputs are between 1 and 68 (inclusive)");
                 }
                 else {
                     System.out.println("Valid input");
@@ -45,6 +45,7 @@ public class Main {
         double y = Math.pow((1 - Math.sqrt(5)),n+1);
         double z = Math.pow(2,n + 1) * Math.sqrt(5);
         long sum = (long)((x - y) / z) - 1;
+        // Formula =  ((1 + sqrt(5))^n+1 - (1 - sqrt(5))^n+1 ) - 1)/ (sqrt(5)) * 2^n+1)
         
         return sum;
     }
