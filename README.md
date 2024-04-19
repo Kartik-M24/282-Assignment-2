@@ -3,7 +3,7 @@ The program is written in Java.
 All files written by Kartik Malik.
 
 **How It Works:**\
-The program starts by taking the inputs from the user, checking if the inputs are of a valid type and in the valid range, determining which value is larger, and inputting this into the sumOfnFibonacci() method. This then sums the first A and B Fibonacci numbers via a for loop. The for loop has the first two values of 0 and 1 set and then runs through the loop n-2 times to determine the next Fibonacci value and then adds this to the sum. This code is made more efficient by calculating the smaller sum and saving this to a 1x2 array as it calculates the larger sum, which is then saved in the same array (in the second position). Once the two sums have been calculated and displayed, they are inputted into the gcd method, which recursively uses the Euclid Division Lemma to work out the  gcd between the two sums. Each time it returns to another gcd method, it displays the values for a, b, q (quotient) and r (remainder) until the remainder is 0, and thus the gcd is determined (the last non-zero remainder - b). This is finally outputted. 
+The program starts by taking the inputs from the user, checking if the inputs are of a valid type and in the valid range, determining which value is larger, and inputting this into the sumFibonacci() method. This then sums the first A and B Fibonacci numbers via the Fibonacci sum equation. Once the two sums have been calculated and displayed, they are inputted into the gcd method, which recursively uses the Euclid Division Lemma to work out the  gcd between the two sums. Each time it returns to another gcd method, it displays the values for a, b, q (quotient) and r (remainder) until the remainder is 0, and thus the gcd is determined (the last non-zero remainder - b). This is finally outputted. 
 
 **Examples:**\
 Please enter an integer between 1 and 45 (inclusive):\
@@ -71,5 +71,5 @@ As shown in the second example, only int inputs within the range of 1-45 are acc
 3) Run the program
 4) You will see a similar output to the above.
 
-*Note there are limits to this code; the maximum n value for the sum of the first n Fibonacci values is 45. Above this value, the sum goes beyond the range int type can be represented in Java (-2147483648 to 2147483647), so the value gets rolled over and becomes negative.* 
+*Note there are limits to this code; the maximum n value for the sum of the first n Fibonacci values is 92. Above this value, the sum goes beyond the range int type can be represented in Java (-9,223,372,036,854,775,808 to -9,223,372,036,854,775,808), so the value gets rolled over and becomes negative.* 
 Obviously, A and B must be whole numbers > 0 (as A and B are positive integers). If other types are inputted for A and B, the code will not accept these inputs and will repeatedly ask until a valid input is given (and in the valid range).
