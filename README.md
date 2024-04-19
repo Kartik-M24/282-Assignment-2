@@ -40,9 +40,13 @@ Iteration 23 : 53133 = 17711 x 3 + 0\
 GCD of the two sums is: 17711
 
 Please enter an integer between 1 and 45 (inclusive):\
-33\
-Please enter an integer between 1 and 45 (inclusive):\
+forty\
+Please enter a valid integer\
 40\
+Please enter an integer between 1 and 45 (inclusive):\
+5000\
+Please make sure inputs are between 1 and 45 (inclusive)\
+33\
 Inputs are A: 33 B: 40\
 Sum of first 40 Fibonacci numbers: 165580140\
 Sum of first 33 Fibonacci numbers: 5702886\
@@ -55,6 +59,7 @@ Iteration 5 : 30 = 12 x 2 + 6\
 Iteration 6 : 12 = 6 x 2 + 0\
 GCD of the two sums is: 6\
 ***Note the above outputs are taken directly from the terminal on which the code was run.***
+As shown in the second example, only int inputs within the range of 1-45 are accepted.
 
 **To compile and run the program:**
 1) Clone the repository
