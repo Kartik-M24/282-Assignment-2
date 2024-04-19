@@ -6,10 +6,10 @@ All files written by Kartik Malik.
 The program starts by taking the inputs from the user, checking if the inputs are of a valid type and in the valid range, determining which value is larger, and inputting this into the sumFibonacci() method. This then sums the first A and B Fibonacci numbers via the Fibonacci sum equation. Once the two sums have been calculated and displayed, they are inputted into the gcd method, which recursively uses the Euclid Division Lemma to work out the  gcd between the two sums. Each time it returns to another gcd method, it displays the values for a, b, q (quotient) and r (remainder) until the remainder is 0, and thus the gcd is determined (the last non-zero remainder - b). This is finally outputted. 
 
 **Examples:**\
-Please enter an integer between 1 and 68 (inclusive):\
+Please enter an integer between 1 and 45 (inclusive):\
 44\
 Valid input\
-Please enter an integer between 1 and 68 (inclusive):\
+Please enter an integer between 1 and 45 (inclusive):\
 45\
 Valid input\
 Inputs are A: 44 B: 45\
@@ -41,14 +41,14 @@ Iteration 22 : 70844 = 53133 x 1 + 17711\
 Iteration 23 : 53133 = 17711 x 3 + 0\
 GCD of the two sums is: 17711
 
-Please enter an integer between 1 and 68 (inclusive):\
+Please enter an integer between 1 and 45 (inclusive):\
 forty\
 Please enter a valid integer\
 40\
 Valid input\
-Please enter an integer between 1 and 68 (inclusive):\
+Please enter an integer between 1 and 45 (inclusive):\
 5000\
-Please make sure inputs are between 1 and 68 (inclusive)\
+Please make sure inputs are between 1 and 45 (inclusive)\
 33\
 Valid input\
 Inputs are A: 33 B: 40\
@@ -63,7 +63,7 @@ Iteration 5 : 30 = 12 x 2 + 6\
 Iteration 6 : 12 = 6 x 2 + 0\
 GCD of the two sums is: 6\
 ***Note the above outputs are taken directly from the terminal on which the code was run.***\
-As shown in the second example, only int inputs within the range of 1-68 are accepted.
+As shown in the second example, only int inputs within the range of 1-45 are accepted.
 
 **To compile and run the program:**
 1) Clone the repository
@@ -71,5 +71,5 @@ As shown in the second example, only int inputs within the range of 1-68 are acc
 3) Run the program
 4) You will see a similar output to the above.
 
-*Note there are limits to this code; the maximum n value for the sum of the first n Fibonacci values is 68. Above this value, the sum comes out as inaccurate due to rounding errors in how java stores vaues of long type. Long type can be represented in Java (-9,223,372,036,854,775,808 to -9,223,372,036,854,775,808), so the value gets rounded and the sum becomes inaccurate beyond n = 68.*\
+*Note there are limits to this code; the maximum n value for the sum of the first n Fibonacci values is 45, as I am confident that the program is correct up to this point. Though long type can be represented in Java (-9,223,372,036,854,775,808 to -9,223,372,036,854,775,808), As there is uncertainty regarding whether the summed values beyond this range and the GCD outcome determined  by this program are correct I have capped the inputs at 45. I.e. the program may have rounding errors which leads to incorrect sums/GCD outcome.*\
 Obviously, A and B must be whole numbers > 0 (as A and B are positive integers). If other types are inputted for A and B, the code will not accept these inputs and will repeatedly ask until a valid input is given (and in the valid range).
