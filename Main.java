@@ -1,14 +1,15 @@
 import java.util.Scanner;
+import java.lang.Math; 
 
 public class Main {
 
     // Recursive Method to find the gcd of the two sums using the Euclidean Algorithm
-    public static int gcd(int a, int b, int i) {
-        if (b == 0)
-            return a;
+    public static long gcd(long sumLarger, long sumSmaller, int i) {
+        if (sumSmaller == 0)
+            return sumLarger;
         else {
-            System.out.println("Iteration " + i +  " : " + a + " = " + b + " x " + (int)Math.floor((double)(a / b)) + " + " + a%b);
-            return gcd(b, a % b, i += 1);
+            System.out.println("Iteration " + i +  " : " + sumLarger + " = " + sumSmaller + " x " + (int)Math.floor((double)(sumLarger / sumSmaller)) + " + " + sumLarger%sumSmaller);
+            return gcd(sumSmaller, sumLarger % sumSmaller, i += 1);
         }
     }
 
@@ -27,7 +28,6 @@ public class Main {
                     System.out.println("Please make sure inputs are between 1 and 45 (inclusive)");
                 }
                 else {
-                    System.out.println("Valid input");
                     valid = true;
                 }
             } catch (Exception e) {
@@ -36,6 +36,16 @@ public class Main {
             }
         }
         return input;
+    }
+
+    // Method to find the sum of the first n Fibonacci numbers
+    public static long sumFibonacci(int n) {
+        double x = Math.pow((1 + Math.sqrt(5)),n+1);
+        double y = Math.pow((1 - Math.sqrt(5)),n+1);
+        double z = Math.pow(2,n + 1) * Math.sqrt(5);
+        long sum = (long)((x - y) / z) - 1;
+        
+        return sum;
     }
 
 
@@ -55,11 +65,9 @@ public class Main {
             smallerVal = a;
         }
 
-        // Using the sumOfnFibonnaci class
-        sumOfnFibonnaci sum = new sumOfnFibonnaci(largerVal, smallerVal);
-        int[] sums = sum.findSum();
-        int sumLarger = sums[0];
-        int sumSmaller = sums[1];
+        // Using the formula for the sum of the first n Fibonacci numbers
+        long sumLarger = sumFibonacci(largerVal);
+        long sumSmaller = sumFibonacci(smallerVal);
 
         // Printing out the results
         System.out.println("Inputs are A: " + a + " B: " + b);
@@ -68,7 +76,7 @@ public class Main {
         System.out.println("Iteration n:  a = b x q + r");
 
         // Finding the GCD of the two sums
-        int output = gcd(sumLarger, sumSmaller, 1);
+        long output = gcd(sumLarger, sumSmaller, 1);
         System.out.println("GCD of the two sums is: " + output);
         
     }
