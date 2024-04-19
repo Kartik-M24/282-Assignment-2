@@ -6,7 +6,7 @@ All files written by Kartik Malik.
 The program starts by taking the inputs from the user, checking if the inputs are of a valid type and in the valid range, determining which value is larger, and inputting this into the sumOfnFibonacci() method. This then sums the first A and B Fibonacci numbers via a for loop. The for loop has the first two values of 0 and 1 set and then runs through the loop n-2 times to determine the next Fibonacci value and then adds this to the sum. This code is made more efficient by calculating the smaller sum and saving this to a 1x2 array as it calculates the larger sum, which is then saved in the same array (in the second position). Once the two sums have been calculated and displayed, they are inputted into the gcd method, which recursively uses the Euclid Division Lemma to work out the  gcd between the two sums. Each time it returns to another gcd method, it displays the values for a, b, q (quotient) and r (remainder) until the remainder is 0, and thus the gcd is determined (the last non-zero remainder - b). This is finally outputted. 
 
 **Examples:**\
-Please enter an integer between 1 and 45 (inclusive):\ 
+Please enter an integer between 1 and 45 (inclusive):\
 44\
 Please enter an integer between 1 and 45 (inclusive):\
 45\
@@ -39,7 +39,7 @@ Iteration 22 : 70844 = 53133 x 1 + 17711\
 Iteration 23 : 53133 = 17711 x 3 + 0\
 GCD of the two sums is: 17711
 
-Please enter an integer between 1 and 45 (inclusive):\ 
+Please enter an integer between 1 and 45 (inclusive):\
 33\
 Please enter an integer between 1 and 45 (inclusive):\
 40\
