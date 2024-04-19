@@ -8,8 +8,10 @@ The program starts by taking the inputs from the user, checking if the inputs ar
 **Examples:**\
 Please enter an integer between 1 and 45 (inclusive):\
 44\
+Valid input\
 Please enter an integer between 1 and 45 (inclusive):\
 45\
+Valid input\
 Inputs are A: 44 B: 45\
 Sum of first 45 Fibonacci numbers: 1836311902\
 Sum of first 44 Fibonacci numbers: 1134903169\
@@ -43,10 +45,12 @@ Please enter an integer between 1 and 45 (inclusive):\
 forty\
 Please enter a valid integer\
 40\
+Valid input\
 Please enter an integer between 1 and 45 (inclusive):\
 5000\
 Please make sure inputs are between 1 and 45 (inclusive)\
 33\
+Valid input\
 Inputs are A: 33 B: 40\
 Sum of first 40 Fibonacci numbers: 165580140\
 Sum of first 33 Fibonacci numbers: 5702886\
