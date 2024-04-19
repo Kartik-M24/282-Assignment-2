@@ -27,6 +27,7 @@ public class Main {
                     System.out.println("Please make sure inputs are between 1 and 45 (inclusive)");
                 }
                 else {
+                    System.out.println("Valid input");
                     valid = true;
                 }
             } catch (Exception e) {
