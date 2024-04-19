@@ -18,16 +18,17 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int input = 0;
         boolean valid = false;
-        System.out.println("Please enter an integer between 1 and 45 (inclusive): ");
+        System.out.println("Please enter an integer between 1 and 92 (inclusive): ");
 
         // Loop to check for valid input (integer between 1 and 45 inclusive)
         while (valid == false) {
             try {
                 input = scanner.nextInt(); // Get the input
-                if (input > 45 || input < 0) {
-                    System.out.println("Please make sure inputs are between 1 and 45 (inclusive)");
+                if (input > 92 || input < 0) {
+                    System.out.println("Please make sure inputs are between 1 and 92 (inclusive)");
                 }
                 else {
+                    System.out.println("Valid input");
                     valid = true;
                 }
             } catch (Exception e) {
